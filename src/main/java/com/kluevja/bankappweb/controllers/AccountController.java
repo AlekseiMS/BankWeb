@@ -1,5 +1,6 @@
 package com.kluevja.bankappweb.controllers;
 
+<<<<<<< HEAD
 import com.kluevja.bankappweb.models.Account;
 import com.kluevja.bankappweb.services.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -53,4 +54,28 @@ public class AccountController {
     public ModelAndView delete (@RequestParam Long id, RedirectAttributes model) {
         return new ModelAndView("redirect:/account");
     }
+=======
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+@RequestMapping("/account")
+
+public class AccountController {
+//    @PostMapping
+//    public ModelAndView create () {
+//        return  new ModelAndView("redirect:/accoount");
+//    }
+//    public ModelAndView get () {
+//
+//    }
+//    public ModelAndView updete () {
+//
+//    }
+//    public ModelAndView delete () {
+//
+//    }
+>>>>>>> 4f319af (Addition Transaction,TransactionRepository)
 }
