@@ -65,12 +65,16 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0fbc0da (changes)
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 			<version>3.0.0</version>
 		</dependency>
+<<<<<<< HEAD
 
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
@@ -88,6 +92,8 @@
 			<version>2.7</version>
 		</dependency>
 
+=======
+>>>>>>> 0fbc0da (changes)
 	</dependencies>
 
 	<build>
