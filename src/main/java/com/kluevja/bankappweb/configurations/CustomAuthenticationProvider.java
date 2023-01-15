@@ -40,7 +40,12 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
     }
 
     private Authentication createSuccessfulAuthentication(final Authentication authentication, final UserDetails user) {
+<<<<<<< HEAD
         UsernamePasswordAuthenticationToken token = new UsernamePasswordAuthenticationToken(user.getUsername(), authentication.getCredentials(), user.getAuthorities());
+=======
+        UsernamePasswordAuthenticationToken token = new UsernamePasswordAuthenticationToken(user.getUsername(),
+                authentication.getCredentials(), user.getAuthorities());
+>>>>>>> 3c1fec1 (Добавили разграничение ролей пользователя и оператора и реализовали отлов)
         token.setDetails(authentication.getDetails());
         System.out.println(token);
         return token;
