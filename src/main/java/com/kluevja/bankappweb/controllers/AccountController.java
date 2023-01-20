@@ -22,7 +22,11 @@ public class AccountController {
     public AccountService accountService;
 
     @PostMapping("/create")
+<<<<<<< HEAD
     public ModelAndView create (@RequestParam Long id, RedirectAttributes model) {
+=======
+    public ModelAndView create(@RequestParam Long id, RedirectAttributes model) {
+>>>>>>> 79376e0 (Пробный)
 
         if (accountService.createAccount(id)) {
             model.addFlashAttribute("msg", "Счет успешно создан");
@@ -96,6 +100,7 @@ public class AccountController {
             model.addFlashAttribute("msg", "Не удалось создать счет");
         }
         return new ModelAndView("redirect:/account");
+<<<<<<< HEAD
     }
     @GetMapping("/get")
     public ModelAndView get (@RequestParam Long id, RedirectAttributes model) {
@@ -117,6 +122,8 @@ public class AccountController {
     public ModelAndView delete (@RequestParam Long id, RedirectAttributes model) {
         return  new ModelAndView("redirect:/account");
 
+=======
+>>>>>>> 79376e0 (Пробный)
     }
 >>>>>>> c630f34 (Add AccountService, AccountController)
 }

@@ -86,6 +86,9 @@ public class ClientService {
         clientRepository.delete(clientRepository.findById(id).get());
         return true;
     }
+    public Client getClientByEmail(String email) {
+        return clientRepository.findByEmail(email);
+    }
 
     public Client getClientByEmail(String email) {
         return clientRepository.findByEmail(email);
